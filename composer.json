@@ -1,0 +1,13 @@
+{
+    "name": "usman/stripe",
+    "description": "this is a stripe payment package",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+        "Usman\\Stripe\\":"src/"
+        }
+    }
+}
