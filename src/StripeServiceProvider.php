@@ -10,6 +10,9 @@ class StripeServiceProvider extends ServiceProvider
     {
         $this->loadRoutesFrom(__DIR__ . '/routes/web.php');   
         $this->loadViewsFrom(__DIR__ . '/views','stripe');
+        $this->mergeConfigFrom(__DIR__ . '/config/stripe.php','stripe');
+        $this->publishes([__DIR__ . '/config/stripe.php' => config_path('stripe.php'),]);
+
     }
     public function register()
     {
