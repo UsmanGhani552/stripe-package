@@ -9,5 +9,10 @@
         "psr-4": {
         "Usman\\Stripe\\":"src/"
         }
+    },
+    "extra": {
+        "laravel": [
+            "Usman\\Stripe\\StripeServiceProvider"
+        ]
     }
 }
